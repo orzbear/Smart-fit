@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../assets/App-Logo.png';
 
 function Login() {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -41,7 +42,7 @@ function Login() {
   return (
     <div className="w-full flex flex-col items-center justify-center min-h-screen ">
       <div className="text-center mb-2">
-        <img src="../public/APP-Logo.png" alt="App Logo" className="w-24 h-auto mx-auto mb-2" />
+        <img src={logo} alt="App Logo" className="w-24 h-auto mx-auto mb-2" />
         <h1 className="text-4xl font-bold text-gray-800 mb-2">WellFitGPT</h1>
         <p className="text-lg text-gray-600 italic">"Your best partner in health and fitness."</p>
       </div>  
